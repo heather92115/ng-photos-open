@@ -1,0 +1,6 @@
+{
+  "/tfservices": {
+	"target": "http://192.168.70.251:8080",
+	"secure": false
+  }
+}

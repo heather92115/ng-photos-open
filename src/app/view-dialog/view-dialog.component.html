@@ -1,0 +1,9 @@
+<div class="viewPhotoDialog" *ngIf="visible">
+	<a class="closeLink" href="#" (click)="hideImageViewer();"><i class="closeIcon fa fa-close" aria-hidden="true"></i></a>
+	<img class="dialogImage" src="{{sourceUrl}}" *ngIf="sourceUrl" (click)="showFullscreenView();"/>
+</div>
+
+<div class="fullscreenPanel" *ngIf="fullscreen" (click)="hideFullscreenView();">
+	<a class="fullscreenCloseLink" href="#" (click)="hideFullscreenView();"><i class="closeIcon fa fa-close fa-2x" aria-hidden="true"></i></a>
+	<img class="fullscreenImage" src="{{largeSourceUrl}}" *ngIf="largeSourceUrl" (click)="hideFullscreenView();" />
+</div>

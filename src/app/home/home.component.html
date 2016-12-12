@@ -1,0 +1,26 @@
+
+<div class="mainHomePanel">
+
+	<div class="homeSubHeader">
+		<h2> {{siteSummary}}</h2>
+	</div>
+
+	<p-dataTable [value]="photosStore.photoList | async" [paginator]="true" [rows]="8" [responsive]="true">
+		<header><i class="fa fa-gift" aria-hidden="true"></i> All Photos Free to Use as you Wish</header>
+		<p-column field="photo.photoName" header="Name" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+		<p-column field="takenFormatted" header="Taken" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+		<p-column field="cameraMakeModel" header="Camera" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+		<p-column field="photo.lensModel" header="Lens Model" [sortable]="true" [filter]="true" filterMatchMode="contains"></p-column>
+		<p-column field="prefixedPhotoContent" header="Photo">
+			<template let-col let-photoWrapper="rowData" pTemplate type="body">
+				<a href="#" (click)="selectPhoto(photoWrapper); imageViewer.showImageViewer();">
+					<img src="{{photoWrapper[col.field]}}" alt="JPG" class="thumbnailImage"/>
+				</a>
+			</template>
+		</p-column>
+	</p-dataTable>
+
+	<image-viewing-dialog #imageViewer [(sourceUrl)]="selectedSourceUrl" [(largeSourceUrl)]="selectedLargeSourceUrl"></image-viewing-dialog>
+</div>
+
+

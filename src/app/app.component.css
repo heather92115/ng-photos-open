@@ -1,0 +1,17 @@
+
+
+div.topbar.clearfix {
+	left: 0;
+}
+
+div.headerPanel {
+	margin-left: 1rem;
+}
+
+div.main {
+	min-height: calc(100vh - 115px);
+}
+
+div.main, div.wrapper.footer {
+	margin-left: 0;
+}

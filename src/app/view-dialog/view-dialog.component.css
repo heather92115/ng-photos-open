@@ -1,0 +1,59 @@
+
+.viewPhotoDialog {
+	display: block;
+	position: absolute;
+	background-color: black;
+	border-radius: .15rem;
+	max-width: 50vw;
+	top: 20vh;
+	right: 20vw;
+	z-index: 100000;
+	padding: 3rem;
+}
+
+.dialogImage {
+	display: block;
+	margin: auto;
+	max-width: 40vw;
+	max-height: 50vh;
+	cursor:nesw-resize;
+	border-radius: .1rem;
+}
+
+.closeLink {
+	position: absolute;
+	top: .25rem;
+	right: .35rem;
+}
+
+.closeIcon {
+	color: #cccccc;
+}
+
+div.fullscreenPanel {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	cursor:pointer;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100001;
+	overflow: hidden;
+}
+
+.fullscreenImage {
+	display: block;
+	margin: 2vh auto auto;
+	cursor:pointer;
+	max-width: 96vw;
+	max-height: 96vh;
+	border-radius: .2rem;
+}
+
+.fullscreenCloseLink {
+	position: absolute;
+	top: .25rem;
+	right: 1rem;
+}

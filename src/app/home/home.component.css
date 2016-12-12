@@ -1,0 +1,14 @@
+
+div.mainHomePanel {
+	margin: .5rem;
+}
+
+.homeSubHeader {
+	margin: 1rem;
+}
+
+.thumbnailImage {
+	margin: 1px auto;
+	display: block;
+	padding: 0;
+}

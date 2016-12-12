@@ -1,0 +1,41 @@
+<div class="topbar clearfix">
+
+	<div class="headerPanel">
+
+		<span class="topbar-title">Total Fruition Landscape Photos</span>
+
+		<a id="options-menu-button" href="#">
+			<span class="fa fa-ellipsis-h"></span>
+		</a>
+
+		<div id="topbar-icons" class="animated">
+
+			<a [routerLink]="['home']">
+				<span class="topbar-item-text">Home</span>
+				<span class="topbar-icon fa fa-home"></span>
+			</a>
+			<a [routerLink]="['photos']" *ngIf="false">
+				<span class="topbar-item-text">Images</span>
+				<span class="topbar-icon fa fa-photo"></span>
+			</a>
+			<a [routerLink]="['about']">
+				<span class="topbar-item-text">About</span>
+				<span class="topbar-icon fa fa-info-circle"></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="main">
+	<router-outlet></router-outlet>
+</div>
+
+<div class="wrapper footer">
+	<span  style="margin-right: 1rem;" class="fa fa-copyright" aria-hidden="true"> Copyright 2016 Pacific Coast Professional Services, Inc.</span>
+	<i class="fa fa-laptop" aria-hidden="true"></i>
+	<span style="margin-right: 1rem;">Software Development/Consulting</span>
+	<i class="fa fa-camera-retro" aria-hidden="true"></i>
+	<span style="margin-right: 1.5rem;">Hobbyist Landscape Photography</span>
+
+	<a href="https://www.totalfruition.com"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-right: .325rem;"></i>Back to  Total Fruition</a>
+</div>
